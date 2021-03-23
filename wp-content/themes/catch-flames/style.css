@@ -3372,3 +3372,43 @@ a#scrollup:hover {
 		color: #666;
 	}
 }
+
+#sidebar-header-right {
+    display: flex;
+}
+
+#supertopMenu{
+	margin: 20px;
+}
+
+#searchform{
+	margin-right: 10px;
+}
+
+#primary{
+	width: initial;
+}
+
+#supertopMenu .st-link{
+	color: #000000;
+	padding: 5px 10px;
+}
+
+#supertopMenu .st-link:hover{
+	text-decoration: none;
+	background-color: #e5e5e5;
+}
+
+#supertopMenu ul li{
+	display: inline-block;
+}
+
+#supertopMenu ul li:not(:last-child):after {
+	content: "|";
+	}
+
+@media screen and (min-width: 1600px){
+	#primary{
+		width: initial !important;
+	}
+}

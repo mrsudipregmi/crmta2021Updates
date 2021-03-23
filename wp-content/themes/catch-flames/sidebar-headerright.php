@@ -9,6 +9,21 @@
 ?>
 
 <div id="sidebar-header-right" class="widget-area sidebar-top clearfix">
+
+    <div id="supertopMenu">
+        <ul>
+            <li>
+                <a class="st-link" href="#">Find an RMT</a>
+            </li>
+            <li>
+                <a class="st-link" href="#">Insurer Login</a>
+            </li>
+            <li>
+                <a class="st-link" href="#">Complaints</a>
+            </li>
+        </ul>
+    </div>
+
 	<aside class="widget widget_search">
         <?php echo get_search_form(); ?>
     </aside>
