@@ -77,7 +77,9 @@ do_action( 'catchflames_before' ); ?>
                 do_action( 'catchflames_headercontent' ); ?>
 
             </div><!-- .wrapper -->
-
+            <div id="mWrp" class="wrapper">
+                <a id="aply-btn" href="#">APPLY NOW</a>
+            </div>
       	</div><!-- #header-content -->
 
     	<?php
@@ -89,15 +91,27 @@ do_action( 'catchflames_before' ); ?>
 		do_action( 'catchflames_after_headercontent' ); ?>
 
 	</header><!-- #branding -->
-
+    
 	<?php
+    
     /**
      * catchflames_after_header hook
      *
      * @hooked catchflames_featured_header - 10
      * @hooked catchflames_header_menu - 15
      */
-     do_action( 'catchflames_after_header' ); ?>
+     do_action( 'catchflames_after_header' );
+
+     ?>
+<div style="background-color:#f1f1f1;padding: 20px 0px;">
+    <div class="wrapper">
+    <?php
+         if ( is_front_page() ) {    
+            echo do_shortcode( '[vc_row][vc_column][vc_column_text][cycloneslider id="home"]' );
+        }
+    ?>
+    </div>
+</div>
 
     <div id="main-wrapper">
 
